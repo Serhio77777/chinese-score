@@ -1,0 +1,31 @@
+.score {
+  .picture {
+    position: relative;
+    .first-picture,
+    .second-picture {
+      margin: 20px;
+      content: '';
+      display: table;
+      clear: both;
+      .group {
+        margin: 0 40px 20px 0;
+        content: '';
+        float: left;
+        .line {
+          width: 7px;
+          height: 400px;
+          float: left;
+          margin: 0 5px;
+          background-color: black;
+        }
+      }
+    }
+    .second-picture {
+      transform: rotate(90deg);
+      position: absolute;
+      top: 0;
+      margin-left: 0;
+      left: 20px;
+    }
+  }
+}

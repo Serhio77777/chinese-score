@@ -1,0 +1,23 @@
+<div class="score">
+  <button type="button" name="button" (click)="goNext('menu')">Menu</button>
+  <p>
+    score works!
+  </p>
+  <form [formGroup]="scoreForm">
+    <input type="number" formControlName="firstNumber" (change)="scoreChinese()"/>
+    <input type="number" formControlName="secondNumber" (change)="scoreChinese()"/>
+  </form>
+  <div class="">{{answer}}</div>
+  <div class="picture">
+    <div class="first-picture">
+      <div class="group" *ngFor="let firstElements of firstNumber">
+        <div class="line" *ngFor="let element of firstElements"></div>
+      </div>
+    </div>
+    <div class="second-picture">
+      <div class="group" *ngFor="let secondElements of secondNumber">
+        <div class="line" *ngFor="let element of secondElements"></div>
+      </div>
+    </div>
+  </div>
+</div>
